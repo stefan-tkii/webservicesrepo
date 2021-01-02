@@ -1,0 +1,88 @@
+package webproject.filmreview.Models;
+
+import java.util.List;
+
+public class Series 
+{
+    
+    private long Id;
+    private String name;
+    private long rating;
+    private String description;
+    private List<Season> seasons;
+    private List<Genres> genres;
+
+    public Series() 
+    { }
+
+    public Series(long Id, String name, long rating, String description, List<Season> seasons, List<Genres> genres) 
+    {
+        this.Id = Id;
+        this.name = name;
+        this.rating = rating;
+        this.description = description;
+        this.seasons = seasons;
+        this.genres = genres;
+    }
+
+    public long getId() 
+    {
+        return this.Id;
+    }
+
+    public void setId(long Id) 
+    {
+        this.Id = Id;
+    }
+
+    public String getName() 
+    {
+        return this.name;
+    }
+
+    public void setName(String name) 
+    {
+        this.name = name;
+    }
+
+    public long getRating() 
+    {
+        return this.rating;
+    }
+
+    public void setRating(long rating) 
+    {
+        this.rating = rating;
+    }
+
+    public String getDescription() 
+    {
+        return this.description;
+    }
+
+    public void setDescription(String description) 
+    {
+        this.description = description;
+    }
+
+    public List<Season> getSeasons() 
+    {
+        return this.seasons;
+    }
+
+    public void setSeasons(List<Season> seasons) 
+    {
+        this.seasons = seasons;
+    }
+
+    public List<Genres> getGenres() 
+    {
+        return this.genres;
+    }
+
+    public void setGenres(List<Genres> genres) 
+    {
+        this.genres = genres;
+    }
+
+}
